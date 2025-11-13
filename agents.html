@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>devdev</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color:#1b2451;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Дизайн без названия.png" alt="logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="listings.html">listings</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="agents.html">agents</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">contact</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="property-details.html">property details</a></li>
+          <li class="nav-item">
+            <button class="btn btn-link nav-link text-white" id="themeToggle" title="Toggle dark mode">🌙 
+
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-spacer"></div>
+
+    
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>meet our agents</h1>
+            <p>professional and experienced real estate experts ready to help you</p>
+        </div>
+    </section>
+
+    <!-- Agents Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card agent-card h-100">
+                        <img src="Снимок экрана 2025-11-09 в 23.34.32.png" class="card-img-top agent-main-img" alt="Nurai">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nurai</h5>
+                            <p class="text-muted">senior real estate agent</p>
+                            <p class="card-text">specializing in luxury properties and downtown apartments. over 10 years of experience.</p>
+                            <div class="agent-stats">
+                                <small><strong>50+</strong> properties sold</small><br>
+                                <small><strong>98%</strong> client satisfaction</small>
+                            </div>
+                            <button class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#agentModal1">
+                                view profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card agent-card h-100">
+                        <img src="Снимок экрана 2025-11-09 в 23.34.47.png" class="card-img-top agent-main-img" alt="Ayaulym">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ayaulym</h5>
+                            <p class="text-muted">commercial real estate specialist</p>
+                            <p class="card-text">expert in commercial properties and investment opportunities. MBA in real estate finance.</p>
+                            <div class="agent-stats">
+                                <small><strong>75+</strong> deals closed</small><br>
+                                <small><strong>$50M+</strong> in sales</small>
+                            </div>
+                            <button class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#agentModal2">
+                                view profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card agent-card h-100">
+                        <img src="Снимок экрана 2025-11-09 в 23.35.10.png" class="card-img-top agent-main-img" alt="Kaisar">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kaisar</h5>
+                            <p class="text-muted">residential property expert</p>
+                            <p class="card-text">focuses on family homes and suburban properties. known for excellent client service.</p>
+                            <div class="agent-stats">
+                                <small><strong>100+</strong> happy families</small><br>
+                                <small><strong>5 star</strong> ratings</small>
+                            </div>
+                            <button class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#agentModal3">
+                                view profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agent Modals -->
+    <div class="modal fade" id="agentModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nurai - Senior Real Estate Agent</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="Снимок экрана 2025-11-09 в 23.34.32.png" class="img-fluid" alt="Nurai">
+                        </div>
+                        <div class="col-md-8">
+                            <h6>About Nurai</h6>
+                            <p>With over a decade of experience in luxury real estate, Nurai has helped numerous clients find their dream homes in the downtown area.</p>
+                            <h6>Specialties</h6>
+                            <ul>
+                                <li>Luxury Apartments</li>
+                                <li>Penthouse Sales</li>
+                                <li>Investment Properties</li>
+                            </ul>
+                            <h6>Contact</h6>
+                            <p>Email: sarah@skyrealty.com<br>Phone: +1 (555) 123-4568</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="agentModal2" tabindex="-2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ayaulym - Senior Real Estate Agent</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="Снимок экрана 2025-11-09 в 23.34.47.png" class="img-fluid" alt="Ayaulym">
+                        </div>
+                        <div class="col-md-8">
+                            <h6>About Ayaulym</h6>
+                            <p>With over a decade of experience in luxury real estate, Ayaulym has helped numerous clients find their dream homes in the downtown area.</p>
+                            <h6>Specialties</h6>
+                            <ul>
+                                <li>Luxury Apartments</li>
+                                <li>Penthouse Sales</li>
+                                <li>Investment Properties</li>
+                            </ul>
+                            <h6>Contact</h6>
+                            <p>Email: sarah@skyrealty.com<br>Phone: +1 (555) 123-4568</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="agentModal3" tabindex="-3">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kaisar - Senior Real Estate Agent</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="Снимок экрана 2025-11-09 в 23.35.10.png" class="img-fluid" alt="Kaisar">
+                        </div>
+                        <div class="col-md-8">
+                            <h6>About Kaisar</h6>
+                            <p>With over a decade of experience in luxury real estate, Kaisar has helped numerous clients find their dream homes in the downtown area.</p>
+                            <h6>Specialties</h6>
+                            <ul>
+                                <li>Luxury Apartments</li>
+                                <li>Penthouse Sales</li>
+                                <li>Investment Properties</li>
+                            </ul>
+                            <h6>Contact</h6>
+                            <p>Email: sarah@skyrealty.com<br>Phone: +1 (555) 123-4568</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer text-center">
+    © 2025 Sairanqyzy M. - <a href="contact.html" class="text-light">contact</a>
+  </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

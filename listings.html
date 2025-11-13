@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>devdev - Listings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Дизайн без названия.png" alt="logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+          <li class="nav-item"><a class="nav-link" href="listings.html">listings</a></li>
+          <li class="nav-item"><a class="nav-link" href="agents.html">agents</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="property-details.html">property details</a></li>
+          <li class="nav-item">
+            <button class="btn btn-link nav-link" id="themeToggle" title="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-spacer"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Property Listings</h1>
+      <p>Find your perfect home from our collection</p>
+    </div>
+  </section>
+
+  <!-- Simple Filter Section -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <h5 class="text-center mb-3">Filter Properties</h5>
+          <p class="text-center text-muted mb-4" id="resultsCount">Showing all properties</p>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <select class="form-select" id="typeFilter">
+                <option value="all">All Types</option>
+                <option value="apartment">Apartment</option>
+                <option value="house">House</option>
+                <option value="villa">Villa</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select class="form-select" id="priceFilter">
+                <option value="all">Any Price</option>
+                <option value="0-200000">Under $200,000</option>
+                <option value="200000-400000">$200,000 - $400,000</option>
+                <option value="400000-600000">$400,000 - $600,000</option>
+                <option value="600000-1000000">$600,000 - $1,000,000</option>
+                <option value="1000000">Over $1,000,000</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select class="form-select" id="bedroomFilter">
+                <option value="all">Any Bedrooms</option>
+                <option value="1">1 Bedroom</option>
+                <option value="2">2 Bedrooms</option>
+                <option value="3">3 Bedrooms</option>
+                <option value="4">4+ Bedrooms</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Properties Grid -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row" id="propertiesGrid">
+        <!-- Properties loaded by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="portfolio-footer text-center">
+    © 2025 Sairanqyzy M. - <a href="contact.html">contact</a>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
